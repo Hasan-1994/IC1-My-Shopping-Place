@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Macbook",
+            "price": 1400,
+            "img": "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
+            "des": "BASBDBASDBSAB"
+        },
+        {
+            "id": "2",
+            "name": "Mouse",
+            "price": 400,
+            "img": "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
+            "des": "BASBDBASDBSAB"
+        },
+        {
+            "id": "3",
+            "name": "Monitor",
+            "price": 1000,
+            "img": "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
+            "des": "BASBDBASDBSAB"
+        },
+        {
+            "id": "4",
+            "name": "Flash USB",
+            "price": 1,
+            "img": "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
+            "des": "BASBDBASDBSAB"
+        }
+    ]
+}

@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
 import products from "../products/data.json";
 
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+
 function Cards(props) {
     const [productData, setProductData] = useState();
     const { product, onAdd } = props;
@@ -34,7 +36,7 @@ function Cards(props) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button className="addToCardBtn" onClick={() => onAdd(product)}>Add to Card</Button>
+                    <Button className="addToCardBtn" onClick={() => onAdd(product)}>Add to Card /n<AddShoppingCartIcon /></Button>
                 </CardActions>
             </Card>
         </div>

@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Content from './Content';
+import Introduction from './Introduction'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -36,28 +37,23 @@ function a11yProps(index) {
         'aria-controls': `simple-tabpanel-${index}`,
     };
 };
-export default function Header(props) {
-    const { countCardItems } = props;
+export default function Header() {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
-            <Box sx={{ borderBottom: 2, borderColor: 'divider' }}>
-                <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
+        <Box>
+            <h1>image</h1> 
+            <Box sx={{ borderBottom: 3, borderColor: 'divider' }}>
+                <Tabs value={value} onChange={handleChange} centered>
                     <Tab label="Introduction" {...a11yProps(1)} />
                     <Tab label="My Shopping Place" {...a11yProps(2)} />
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-                <div className="Text">
-                    <h3 className="text">
-                        What should this page do? Descripton s felan filan
-                    </h3>
-                </div>
-
+                <Introduction />
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <Content />

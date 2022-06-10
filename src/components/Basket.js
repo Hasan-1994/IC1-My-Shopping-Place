@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 
+import Grid from '@mui/material/Grid';
+
 function Basket(props) {
     const { cardItem, onAdd, onRemove } = props;
     const itemsPrice = cardItem.reduce((a, c) => a + c.price * c.qty, 0);
@@ -49,10 +51,8 @@ function Basket(props) {
                     </div>
                 </>
             )}
-            <hr/>
-            <Button variant="contained" color="success">
-        Buy Items
-      </Button>
+            <hr />
+            {cardItem.length === 0 ? <div> <Button variant="contained" color="success" disabled>Buy Items</Button></div> : <div><Button variant="contained" color="success">Buy Items</Button></div>}
         </aside>
     );
 }

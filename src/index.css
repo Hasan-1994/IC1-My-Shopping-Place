@@ -47,10 +47,14 @@ a {
   padding: 1rem;
   margin: 0.4rem;
   border-radius: 0.7rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 1px 0px 12px 5px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 10px 13px -7px #000000, 1px 0px 12px 5px rgba(0, 0, 0, 0.34);
 }
-.text{
+
+.text {
   text-align: center
 }
+
 .row.center {
   align-items: center;
 }
@@ -112,12 +116,10 @@ button.badge {
   size: medium;
   align-items: center;
   flex: 1;
+  color: #000000
 }
 
 .addToCardBtn:hover {
-  color: #5c3cfa;
-  box-shadow: inset 50px 1px 50px 6px rgb(117, 117, 117), inset 0 -1px 0 0 #ffffff, inset 0 0 0 1px #ffffff;
-  -moz-box-shadow: inset 50px 1px 50px 6px rgb(107, 107, 107), inset 0 -1px 0 0 #ffffff, inset 0 0 0 1px #ffffff;
-  -webkit-box-shadow: inset 50px 1px 50px 6px rgb(129, 129, 129), inset 0 -1px 0 0 #ffffff, inset 0 0 0 1px #ffffff;
-  background-color: #ffffff;
+  color: #000000;
+  box-shadow: inset 50px 1px 50px 6px rgb(4, 145, 46), inset 0 -1px 0 0 #05f84a, inset 0 0 0 1px #028d10;
 }

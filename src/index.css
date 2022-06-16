@@ -123,3 +123,7 @@ button.badge {
   color: #000000;
   box-shadow: inset 50px 1px 50px 6px rgb(4, 145, 46), inset 0 -1px 0 0 #05f84a, inset 0 0 0 1px #028d10;
 }
+.border{
+  border-style: solid;
+  border-color: red;
+}

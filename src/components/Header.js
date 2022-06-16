@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Content from './Content';
 import Introduction from './Introduction'
+import Button from '@mui/material/Button';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -19,7 +20,7 @@ function TabPanel(props) {
             {...other}
         >
             {value === index && (
-                <Box sx={{ p: 1 }}>
+                <Box sx={{ p: 2 }}>
                     <Typography>{children}</Typography>
                 </Box>
             )}
@@ -45,7 +46,13 @@ export default function Header() {
     };
     return (
         <Box>
-            <h1>image</h1> 
+            <a>
+                
+                <h3 className='text'>
+                Name als Logo machen und anklickbar <br/>
+                    My Shopping Place
+                </h3>
+            </a>
             <Box sx={{ borderBottom: 3, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} centered>
                     <Tab label="Introduction" {...a11yProps(1)} />

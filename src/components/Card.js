@@ -36,7 +36,7 @@ function Cards(props) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button className="addToCardBtn" onClick={() => onAdd(product)}>Add to Card /n<AddShoppingCartIcon /></Button>
+                    <Button className="addToCardBtn" onClick={() => onAdd(product)}>Add to Card<AddShoppingCartIcon/></Button>
                 </CardActions>
             </Card>
         </div>

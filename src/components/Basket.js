@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 
 import Grid from '@mui/material/Grid';
 
 function Basket(props) {
-    const { cardItem, onAdd, onRemove } = props;
+    const { cardItem} = props;
     const itemsPrice = cardItem.reduce((a, c) => a + c.price * c.qty, 0);
     const shppingPrice = itemsPrice >= 401 ? 0 : 50;
     const totalPrice = itemsPrice + shppingPrice;
@@ -13,26 +14,14 @@ function Basket(props) {
             <h2 className="text">Cart Items</h2>
             <div>{cardItem.length === 0 && <div>Cart is Empty</div>}</div>
             {cardItem.map((item) => (
-                <div key={item.id} className="row">
-                    <div>{item.name}</div>
-                    <div>
-                        <button
-                            onClick={() => onAdd(item)}
-                            className="add"
-                        >   +
-                        </button>
-                        <button
-                            onClick={() => onRemove(item)}
-                            className="remove"
-                        >
-                            -
-                        </button>
+                <Box sx={{ height: 40, width: '100%' }}>
+                    <div key={item.id} className="row">
+                        <div>{item.name}</div>
+                        <div className="col-2 text-right">
+                            {item.qty} x {item.price.toFixed(2)}€
+                        </div>
                     </div>
-
-                    <div className="col-2 text-right">
-                        {item.qty} x {item.price.toFixed(2)}€
-                    </div>
-                </div>
+                </Box>
             ))}
             {cardItem.length !== 0 && (
                 <>

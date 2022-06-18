@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
-import products from "../products/data.json";
-
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+
 
 function Cards(props) {
     const { product, onAdd } = props;

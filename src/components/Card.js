@@ -9,12 +9,7 @@ import products from "../products/data.json";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 function Cards(props) {
-    const [productData, setProductData] = useState();
     const { product, onAdd } = props;
-    const data = products;
-    useEffect(() => {
-        setProductData(data.products)
-    });
     return (
         <div className="Card">
             <Card sx={{ maxWidth: 200 }}>

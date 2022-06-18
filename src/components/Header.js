@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Content from './Content';
 import Introduction from './Introduction'
-import Button from '@mui/material/Button';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -47,7 +46,6 @@ export default function Header() {
     return (
         <Box>
             <a>
-                
                 <h3 className='text'>
                 Name als Logo machen und anklickbar <br/>
                     My Shopping Place

@@ -14,7 +14,7 @@ function Cards(props) {
     const data = products;
     useEffect(() => {
         setProductData(data.products)
-    }, []);
+    });
     return (
         <div className="Card">
             <Card sx={{ maxWidth: 200 }}>

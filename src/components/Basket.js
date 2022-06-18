@@ -2,8 +2,6 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
-import Grid from '@mui/material/Grid';
-
 function Basket(props) {
     const { cardItem} = props;
     const itemsPrice = cardItem.reduce((a, c) => a + c.price * c.qty, 0);

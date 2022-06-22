@@ -4,6 +4,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Footer() {
     return (
@@ -14,6 +15,7 @@ export default function Footer() {
                     <Button><InstagramIcon onClick={()=> alert("sdasdas")}/></Button>
                     <Button><LinkedInIcon onClick={()=> alert("sdasdas")}/></Button>
                     <Button><ShoppingBagIcon onClick={()=> alert("Hier Icon von Shop und Logo")}/></Button>
+                    <Button><GitHubIcon onClick={()=> alert("Hier Icon von Shop und Logo")}/></Button>
                 </ButtonGroup>
             </div>
 
